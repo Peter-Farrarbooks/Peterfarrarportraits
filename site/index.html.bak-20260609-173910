@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-GB" class='silverstorm-theme'>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portrait Photographer in Basingstoke &amp; Hampshire | Peter Farrar Portraits</title>
-<meta name="description" content="Professional portrait photography in Basingstoke and Hampshire creating timeless portraits you'll be proud to display for years to come.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://peterfarrarportraits.com/">
-<meta property="og:locale" content="en_GB">
-<meta property="og:site_name" content="Peter Farrar Portraits"><meta property="og:type" content="website">
-<meta property="og:url" content="https://peterfarrarportraits.com/">
-<meta property="og:title" content="Portrait Photographer in Basingstoke &amp; Hampshire | Peter Farrar Portraits">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.peterfarrarportraits.com/">
+<meta property="og:title" content="Portrait Photographer in Basingstoke & Hampshire | Peter Farrar Portraits">
 <meta property="og:description" content="Professional portrait photography in Basingstoke and Hampshire creating timeless portraits you'll be proud to display for years to come.">
-<meta property="og:image" content="https://peterfarrarportraits.com/wp-content/uploads/2026/06/peter-farrar-portrait-photographer.jpg">
+<meta property="og:image" content="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/peter-farrar-portrait-photographer.jpg">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Portrait Photographer in Basingstoke &amp; Hampshire | Peter Farrar Portraits">
+<meta name="twitter:title" content="Portrait Photographer in Basingstoke & Hampshire | Peter Farrar Portraits">
 <meta name="twitter:description" content="Professional portrait photography in Basingstoke and Hampshire. Studio and location portrait sessions by Peter Farrar.">
-<meta name="twitter:image" content="https://peterfarrarportraits.com/wp-content/uploads/2026/06/peter-farrar-portrait-photographer.jpg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-08STG260DS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta name="twitter:image" content="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/peter-farrar-portrait-photographer.jpg">
 
-  gtag('config', 'G-08STG260DS');
-</script>
 
 <script type="application/ld+json">
 {
@@ -35,10 +20,10 @@
 
     {
       "@type":"ProfessionalService",
-      "@id":"https://peterfarrarportraits.com/#business",
+      "@id":"https://www.peterfarrarportraits.com/#business",
       "name":"Peter Farrar Portraits",
-      "url":"https://peterfarrarportraits.com",
-      "image":"https://peterfarrarportraits.com/wp-content/uploads/2026/06/peter-farrar-portrait-photographer.jpg",
+      "url":"https://www.peterfarrarportraits.com",
+      "image":"https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/peter-farrar-portrait-photographer.jpg",
       "description":"Professional portrait photographer serving Basingstoke and Hampshire.",
       "areaServed":[
         {
@@ -60,11 +45,11 @@
 
     {
       "@type":"Photographer",
-      "@id":"https://peterfarrarportraits.com/#photographer",
+      "@id":"https://www.peterfarrarportraits.com/#photographer",
       "name":"Peter Farrar",
-      "url":"https://peterfarrarportraits.com",
+      "url":"https://www.peterfarrarportraits.com",
       "worksFor":{
-        "@id":"https://peterfarrarportraits.com/#business"
+        "@id":"https://www.peterfarrarportraits.com/#business"
       },
       "jobTitle":"Portrait Photographer",
       "sameAs":[
@@ -77,11 +62,11 @@
 
     {
       "@type":"WebSite",
-      "@id":"https://peterfarrarportraits.com/#website",
-      "url":"https://peterfarrarportraits.com",
+      "@id":"https://www.peterfarrarportraits.com/#website",
+      "url":"https://www.peterfarrarportraits.com",
       "name":"Peter Farrar Portraits",
       "publisher":{
-        "@id":"https://peterfarrarportraits.com/#business"
+        "@id":"https://www.peterfarrarportraits.com/#business"
       }
     }
   ]
@@ -129,7 +114,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel='stylesheet' id='silverstorm_local_google_fonts-css' href='wp-content/themes/silverstorm/resources/google-fonts/style.css%253Fver=1.0.33.css' media='all' />
 <script id="jquery-core-js" src="wp-includes/js/jquery/jquery.min.js%253Fver=3.7.1"></script>
 <script id="jquery-migrate-js" src="wp-includes/js/jquery/jquery-migrate.min.js%253Fver=3.4.1"></script>
-<style data-colibri-theme-style="true">
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/6" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%253Frsd" />
+<meta name="generator" content="WordPress 7.0" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+            <style data-colibri-theme-style="true">
             html.silverstorm-theme #colibri [data-colibri-component="dropdown-menu"] ul{justify-content:none !important}html.silverstorm-theme #colibri [data-colibri-component="dropdown-menu"] .h-mobile-menu{text-align:%s}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] .h-column-container{flex-basis:auto}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] .h-column-container:nth-child(1) a{margin:inherit}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] .h-column-container:nth-child(2):not([class*='h-hide']){display:block}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] div > .colibri-menu-container > ul.colibri-menu{justify-content:flex-end}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"][data-colibri-component="navigation"]#navigation{padding-top:0px;padding-bottom:0px}html.silverstorm-theme #colibri [data-selective-refresh='colibriwp-theme-components-innerheader-topbar']{display:none}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"]{min-height:auto;background-color:rgba(3, 169, 244, 1);background-image:url("wp-content/themes/silverstorm/resources/images/hero-background.jpg");background-position:%s;background-attachment:scroll;background-repeat:no-repeat;background-size:cover;padding-top:50px;padding-bottom:50px}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"] .background-layer .shape-layer{background-image:url(wp-content/themes/silverstorm/resources/images/header-shapes/none.png)}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"] .background-layer .overlay-layer{background-color:rgba(28, 28, 36, 1);opacity:calc( 50 / 100 )}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"] .h-separator{height:100px !important}html.silverstorm-theme #colibri [data-colibri-id="1837-h28"]{}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-column-container{width:100%}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-column-container:nth-child(1){}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-column-container:nth-child(2){display:none}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .style-26{padding-right:0}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"]{min-height:100vh;background-color:rgba(16, 17, 24, 1);background-image:url("wp-content/themes/silverstorm/resources/images/hero-background.jpg");background-position:%s;background-attachment:scroll;background-repeat:no-repeat;background-size:cover;padding-top:120px;padding-bottom:200px}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .background-layer .shape-layer{background-image:url(wp-content/themes/silverstorm/resources/images/header-shapes/none.png)}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .background-layer .overlay-layer{background-image:linear-gradient(249deg,rgba(28, 28, 36, 0.95) 35% ,rgba(28, 28, 36, 0.2) 51%);opacity:calc( 50 / 100 )}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-separator{height:100px !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h28"]{text-align:left}html.silverstorm-theme #colibri [data-colibri-id="1833-h29"]{text-align:left}html.silverstorm-theme #colibri [data-colibri-id="1833-h30"]{text-align:left}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] .h-column-container{flex-basis:auto}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] .h-column-container:nth-child(1) a{margin:inherit}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] .h-column-container:nth-child(2):not([class*='h-hide']){display:block}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] div > .colibri-menu-container > ul.colibri-menu{justify-content:flex-end}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"][data-colibri-component="navigation"]#navigation{padding-top:0px;padding-bottom:0px}html.silverstorm-theme #colibri [data-selective-refresh='colibriwp-theme-components-frontheader-topbar']{display:none}html.silverstorm-theme #colibri #hero img{box-shadow:none}html.silverstorm-theme #colibri #hero div.h-image__frame{border-style:solid;background-color:transparent}html.silverstorm-theme #colibri #hero .h-image__frame{background-color:rgba(255,255,255,1);border-color:rgba(255,255,255,1);width:100%;height:100%;transform:translateX(10%) translateY(5%);border-width:10px;z-index:-1;display:none}html.silverstorm-theme #colibri .colibri-post-has-no-thumbnail.colibri-post-thumbnail-has-placeholder .colibri-post-thumbnail-content{background-color:rgb(196, 196, 202)}@media (max-width:767px){html.silverstorm-theme #colibri [data-colibri-id="1837-h25"]{background-attachment:scroll}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:first-child{width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:nth-child(2){width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"]{background-attachment:scroll}}@media (min-width: 768px) and (max-width: 1023px){html.silverstorm-theme #colibri [data-colibri-id="1837-h25"]{background-attachment:scroll}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:first-child{width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:nth-child(2){width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"]{background-attachment:scroll}}@media (min-width: 1024px){html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:first-child{width:50% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:nth-child(2){width:calc(100% - 50%) !important}}        </style>
         </head>
 

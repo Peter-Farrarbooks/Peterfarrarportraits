@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <title>Portrait Gallery | Professional Portrait Photography by Peter Farrar</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>Contact &#8211; Peter Farrar Portraits</title>
 <meta name='robots' content='max-image-preview:large' />
 <link rel="alternate" type="application/rss+xml" title="Peter Farrar Portraits &raquo; Feed" href="../feed/index.html.rss" />
 <link rel="alternate" type="application/rss+xml" title="Peter Farrar Portraits &raquo; Comments Feed" href="../comments/feed/index.html.rss" />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%253Furl=http%253A%252F%252Fpeterfarrarportraits.local%252Fportrait-gallery%252F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%253Furl=http%253A%252F%252Fpeterfarrarportraits.local%252Fportrait-gallery%252F&format=xml" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%253Furl=http%253A%252F%252Fpeterfarrarportraits.local%252Fcontact%252F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%253Furl=http%253A%252F%252Fpeterfarrarportraits.local%252Fcontact%252F&format=xml" />
 <style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -34,11 +34,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 /*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
 </style>
-<style id="wp-block-paragraph-inline-css">
-.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
-/*# sourceURL=http://peterfarrarportraits.local/wp-includes/blocks/paragraph/style.min.css */
-</style>
-
 <style id="classic-theme-styles-inline-css">
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -55,28 +50,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel='stylesheet' id='silverstorm_local_google_fonts-css' href='../wp-content/themes/silverstorm/resources/google-fonts/style.css%253Fver=1.0.33.css' media='all' />
 <script id="jquery-core-js" src="../wp-includes/js/jquery/jquery.min.js%253Fver=3.7.1"></script>
 <script id="jquery-migrate-js" src="../wp-includes/js/jquery/jquery-migrate.min.js%253Fver=3.4.1"></script>
-<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/148" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%253Frsd" />
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/152" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%253Frsd" />
 <meta name="generator" content="WordPress 7.0" />
-<link rel="canonical" href="https://peterfarrarportraits.co.uk/portrait-gallery/" />
-<meta name="description" content="Browse a selection of portrait photography by Peter Farrar including professional headshots, creative portraits, personal branding and character portraits photographed in Hampshire and beyond.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Portrait Gallery | Peter Farrar Portraits">
-<meta property="og:description" content="View portrait photography examples showcasing headshots, personal branding and creative portrait sessions.">
-<meta property="og:url" content="https://peterfarrarportraits.co.uk/portrait-gallery/">
-<meta property="og:site_name" content="Peter Farrar Portraits">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Portrait Gallery | Peter Farrar Portraits">
-<meta name="twitter:description" content="Professional portrait photography gallery by Peter Farrar.">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"ImageGallery","name":"Portrait Gallery","url":"https://peterfarrarportraits.co.uk/portrait-gallery/"},{"@type":"Person","name":"Peter Farrar","jobTitle":"Portrait Photographer"}]}
-</script>
-<link rel='shortlink' href="https://peterfarrarportraits.local/?p=148" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='http://peterfarrarportraits.local/?p=152' />
             <style data-colibri-theme-style="true">
             html.silverstorm-theme #colibri [data-colibri-component="dropdown-menu"] ul{justify-content:none !important}html.silverstorm-theme #colibri [data-colibri-component="dropdown-menu"] .h-mobile-menu{text-align:%s}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] .h-column-container{flex-basis:auto}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] .h-column-container:nth-child(1) a{margin:inherit}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] .h-column-container:nth-child(2):not([class*='h-hide']){display:block}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"] div > .colibri-menu-container > ul.colibri-menu{justify-content:flex-end}html.silverstorm-theme #colibri [data-colibri-id="1837-h2"][data-colibri-component="navigation"]#navigation{padding-top:0px;padding-bottom:0px}html.silverstorm-theme #colibri [data-selective-refresh='colibriwp-theme-components-innerheader-topbar']{display:none}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"]{min-height:auto;background-color:rgba(3, 169, 244, 1);background-image:url("../wp-content/themes/silverstorm/resources/images/hero-background.jpg");background-position:%s;background-attachment:scroll;background-repeat:no-repeat;background-size:cover;padding-top:50px;padding-bottom:50px}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"] .background-layer .shape-layer{background-image:url(../wp-content/themes/silverstorm/resources/images/header-shapes/none.png)}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"] .background-layer .overlay-layer{background-color:rgba(28, 28, 36, 1);opacity:calc( 50 / 100 )}html.silverstorm-theme #colibri [data-colibri-id="1837-h25"] .h-separator{height:100px !important}html.silverstorm-theme #colibri [data-colibri-id="1837-h28"]{}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-column-container{width:100%}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-column-container:nth-child(1){}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-column-container:nth-child(2){display:none}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .style-26{padding-right:0}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"]{min-height:100vh;background-color:rgba(16, 17, 24, 1);background-image:url("../wp-content/themes/silverstorm/resources/images/hero-background.jpg");background-position:%s;background-attachment:scroll;background-repeat:no-repeat;background-size:cover;padding-top:120px;padding-bottom:200px}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .background-layer .shape-layer{background-image:url(../wp-content/themes/silverstorm/resources/images/header-shapes/none.png)}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .background-layer .overlay-layer{background-image:linear-gradient(249deg,rgba(28, 28, 36, 0.95) 35% ,rgba(28, 28, 36, 0.2) 51%);opacity:calc( 50 / 100 )}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-separator{height:100px !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h28"]{text-align:left}html.silverstorm-theme #colibri [data-colibri-id="1833-h29"]{text-align:left}html.silverstorm-theme #colibri [data-colibri-id="1833-h30"]{text-align:left}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] .h-column-container{flex-basis:auto}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] .h-column-container:nth-child(1) a{margin:inherit}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] .h-column-container:nth-child(2):not([class*='h-hide']){display:block}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"] div > .colibri-menu-container > ul.colibri-menu{justify-content:flex-end}html.silverstorm-theme #colibri [data-colibri-id="1833-h2"][data-colibri-component="navigation"]#navigation{padding-top:0px;padding-bottom:0px}html.silverstorm-theme #colibri [data-selective-refresh='colibriwp-theme-components-frontheader-topbar']{display:none}html.silverstorm-theme #colibri #hero img{box-shadow:none}html.silverstorm-theme #colibri #hero div.h-image__frame{border-style:solid;background-color:transparent}html.silverstorm-theme #colibri #hero .h-image__frame{background-color:rgba(255,255,255,1);border-color:rgba(255,255,255,1);width:100%;height:100%;transform:translateX(10%) translateY(5%);border-width:10px;z-index:-1;display:none}html.silverstorm-theme #colibri .colibri-post-has-no-thumbnail.colibri-post-thumbnail-has-placeholder .colibri-post-thumbnail-content{background-color:rgb(196, 196, 202)}@media (max-width:767px){html.silverstorm-theme #colibri [data-colibri-id="1837-h25"]{background-attachment:scroll}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:first-child{width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:nth-child(2){width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"]{background-attachment:scroll}}@media (min-width: 768px) and (max-width: 1023px){html.silverstorm-theme #colibri [data-colibri-id="1837-h25"]{background-attachment:scroll}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:first-child{width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:nth-child(2){width:100% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"]{background-attachment:scroll}}@media (min-width: 1024px){html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:first-child{width:50% !important}html.silverstorm-theme #colibri [data-colibri-id="1833-h25"] .h-section-grid-container .h-column-container:nth-child(2){width:calc(100% - 50%) !important}}        </style>
         </head>
 
-<body id="colibri" class="wp-singular page-template-default page page-id-148 wp-theme-silverstorm colibri-theme-silverstorm">
+<body id="colibri" class="wp-singular page-template-default page page-id-152 wp-theme-silverstorm colibri-theme-silverstorm">
 <div class="site" id="page-top">
             <script>
             /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
@@ -145,9 +127,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   <div class="h-global-transition-all h-main-menu">
     <div class="colibri-menu-container"><ul id="menu-menu" class="colibri-menu none bordered-active-item  effect-borders-grow grow-from-left"><li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-159"><a href="../index.html#page-top">Home</a></li>
 <li id="menu-item-227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><a href="../about-peter-farrar/index.html">About Peter Farrar</a></li>
-<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-148 current_page_item menu-item-166"><a href="index.html" aria-current="page">Portrait Gallery</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="../portrait-gallery/index.html">Portrait Gallery</a></li>
 <li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="../investment/index.html">Investment</a></li>
-<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="../contact/index.html">Contact</a></li>
+<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-152 current_page_item menu-item-168"><a href="index.html" aria-current="page">Contact</a></li>
 <li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="../blog/index.html">Blog</a></li>
 <li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-353"><a rel="privacy-policy" href="../privacy-policy/index.html">Privacy Policy</a></li>
 </ul></div>  </div>
@@ -187,9 +169,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             <div class="h-global-transition-all h-mobile-menu">
               <div class="colibri-menu-container"><ul id="menu-menu-1" class="colibri-menu none bordered-active-item  effect-borders-grow grow-from-left"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-159"><a href="../index.html#page-top">Home</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><a href="../about-peter-farrar/index.html">About Peter Farrar</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-148 current_page_item menu-item-166"><a href="index.html" aria-current="page">Portrait Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="../portrait-gallery/index.html">Portrait Gallery</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="../investment/index.html">Investment</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="../contact/index.html">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-152 current_page_item menu-item-168"><a href="index.html" aria-current="page">Contact</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="../blog/index.html">Blog</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-353"><a rel="privacy-policy" href="../privacy-policy/index.html">Privacy Policy</a></li>
 </ul></div>            </div>
@@ -247,7 +229,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
               <div data-colibri-id="1837-h28" class="page-title style-60 style-local-1837-h28 position-relative h-element">
     <div class="h-page-title__outer style-60-outer style-local-1837-h28-outer">
     <div class="h-global-transition-all">
-      <span><h1>Portrait Photography Gallery</h1></span>    </div>
+      <span><h1>Contact</h1></span>    </div>
   </div>
 </div>
             </div>
@@ -289,147 +271,19 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <div class='content  position-relative page-content colibri-page-content' id='content'><!-- Section:start -->
 <div class='d-flex h-section h-section-global-spacing position-relative'><div class='h-section-grid-container h-section-boxed-container'><!-- Row:start -->
 <div class='h-row-container'><div class='h-row'><!-- Column:start -->
-<div class='h-col'><div id="post-148" class="post-148 page type-page status-publish hentry">
+<div class='h-col'><div id="post-152" class="post-152 page type-page status-publish hentry">
   <div>
-   
-<p class="wp-block-paragraph"></p>
-
-
-
-<style data-wp-block-html="css">
-.wp-custom-slideshow {
-  width: 500px;
-  max-width: 500px;
-  margin: 0 auto !important;
-  position: relative;
-}
-
-.wp-custom-slideshow img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.wp-custom-slideshow {
-  position: relative;
-}
-
-.caption-text {
-  position: static;
-  text-align: center;
-  color: #777;
-  background: transparent;
-  font-size: 24px;
-  padding: 8px 0 0;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.45);
-  color: white !important;
-  font-size: 30px;
-  line-height: 1;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-</style>
-
-<script data-wp-block-html="js">
-let slideIndex = 1;
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  let slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  let current = slides[slideIndex - 1];
-  current.style.display = "block";
-  current.style.animation = "none";
-  current.offsetHeight;
-  current.style.animation = "";
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  showSlides(slideIndex);
-
-  setInterval(function() {
-    plusSlides(1);
-  }, 5000);
-});
-</script>
-
-<div class="slideshow-outer">
-  <div class="wp-custom-slideshow">
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/sydney.png" alt="Sydney's Portrait">
-      <div class="caption-text">Sydney</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/cropped-larry.png" alt="Larry's Portrait">
-      <div class="caption-text">Larry</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/KLS1234.jpg" alt="Katie Carpenter Portrait">
-      <div class="caption-text">Katie</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/cropped-tina.png" alt="Tina's Portrait">
-      <div class="caption-text">Tina</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/lacey-682x1024-1.png" alt="Lacy's Portrait">
-      <div class="caption-text">Lacy</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/DSC5737.jpg" alt="Callie Spainhour's Portrait">
-      <div class="caption-text">Callie</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img decoding="async" src="https://www.peterfarrarportraits.com/wp-content/uploads/2026/06/David-742x1024-1.png" alt="David's Portrait">
-      <div class="caption-text">David</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  </div>
-</div>
+   <p>Get in Touch</p>
+<p>Thank you for your interest in Peter Farrar Portraits.</p>
+<p>Whether you are looking for professional headshots, family portraits, personal branding photography, creative portrait sessions, or photography for a special occasion, I would be delighted to discuss your ideas.</p>
+<p>I work with individuals, families, professionals, performers, and businesses to create relaxed, natural portraits that capture personality and character. Every session is tailored to your requirements, ensuring a comfortable and enjoyable experience from start to finish.</p>
+<p>If you would like to enquire about availability, pricing, locations, or have any questions about a portrait photography session, please get in touch using the contact form below or email me directly.</p>
+<p>Based in Hampshire, I provide portrait photography throughout Basingstoke, Winchester, Reading, Newbury, and the surrounding areas.</p>
+<p>I look forward to hearing from you.</p>
+<p><a href="mailto:Peter-Farrar@outlook.com?subject=Contact%20from%20Portraits" style="background:#000000;color:#ffffff;padding:12px 24px;border-radius:25px;text-decoration:none;display:inline-block;"><br />
+Email Peter Farrar<br />
+</a></p>
+<p></a></p>
   </div>
 </div>
 
