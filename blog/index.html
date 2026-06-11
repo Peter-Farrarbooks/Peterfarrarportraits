@@ -81,7 +81,7 @@
     img { display: block; max-width: 100%; height: auto; }
     a { color: inherit; text-decoration: none; }
 
-    /* ââ Nav ââ */
+    /* ── Nav ── */
     .site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; background: rgba(10,10,10,0.97); }
     .nav-logo { display: flex; align-items: center; gap: 0.75rem; }
     .nav-logo img { width: 44px; height: 44px; border-radius: 50%; }
@@ -97,7 +97,7 @@
     .nav-toggle.open span:nth-child(2) { opacity: 0; }
     .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-    /* ââ Hero ââ */
+    /* ── Hero ── */
     .page-hero { position: relative; height: 52vh; min-height: 360px; overflow: hidden; }
     .page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
     .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.6) 100%); }
@@ -105,14 +105,14 @@
     .page-hero-eyebrow { display: block; font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
     .page-hero-title { font-size: clamp(2rem,5vw,3.2rem); font-weight: 400; color: var(--white); letter-spacing: 0.08em; text-transform: uppercase; }
 
-    /* ââ Intro ââ */
+    /* ── Intro ── */
     .blog-intro { background: var(--white); padding: 4rem 2rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.07); }
     .blog-intro-inner { max-width: var(--max-w); margin: 0 auto; }
     .section-label { display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
     .blog-intro h1 { font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
     .blog-intro p { font-size: 0.92rem; color: #444; max-width: 680px; }
 
-    /* ââ Posts grid ââ */
+    /* ── Posts grid ── */
     .posts-section { padding: 3rem 2rem 5rem; background: #f9f7f4; }
     .posts-inner { max-width: var(--max-w); margin: 0 auto; }
 
@@ -122,7 +122,7 @@
       gap: 2rem;
     }
 
-    /* ââ Post card ââ */
+    /* ── Post card ── */
     .post-card {
       background: var(--white);
       border-top: 2px solid var(--gold);
@@ -199,14 +199,14 @@
     .posts-empty h2 { font-size: 1.6rem; font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
     .posts-empty p { font-size: 0.9rem; color: var(--grey); font-style: italic; max-width: 420px; margin: 0 auto 2rem; }
 
-    /* ââ CTA ââ */
+    /* ── CTA ── */
     .cta-banner { background: var(--gold); padding: 4rem 2rem; text-align: center; }
     .cta-banner h2 { font-size: clamp(1.3rem,2.5vw,1.9rem); font-weight: 400; color: var(--black); margin-bottom: 0.75rem; }
     .cta-banner p { font-size: 0.92rem; color: rgba(10,10,10,0.75); margin-bottom: 2rem; }
     .btn-dark { background: var(--black); color: var(--white); border: 1px solid var(--black); display: inline-block; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.8rem 1.8rem; transition: background 0.2s; }
     .btn-dark:hover { background: var(--dark); }
 
-    /* ââ Footer ââ */
+    /* ── Footer ── */
     .site-footer { background: var(--black); color: rgba(245,242,238,0.5); padding: 3rem 2rem; }
     .footer-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
     .footer-brand p { font-size: 0.8rem; line-height: 1.7; margin-top: 0.75rem; }
@@ -219,7 +219,7 @@
     .footer-bottom a { color: rgba(245,242,238,0.4); transition: color 0.2s; }
     .footer-bottom a:hover { color: var(--gold); }
 
-    /* ââ Responsive ââ */
+    /* ── Responsive ── */
     @media (max-width: 768px) {
       .site-nav { padding: 0 1.25rem; }
       .nav-links { display: none; }
@@ -253,7 +253,7 @@
       <li><a href="/about-peter-farrar">About</a></li>
       <li><a href="/portrait-gallery">Gallery</a></li>
       <li><a href="/investment">Investment</a></li>
-      <li><a href="/blog/" aria-current="page">Journal</a></li>
+      <li><a href="/blog/index" aria-current="page">Journal</a></li>
       <li><a href="/contact" class="nav-cta">Book a Session</a></li>
     </ul>
   </nav>
@@ -264,23 +264,23 @@
       <img
         class="page-hero-img"
         src="/images/hero.jpg"
-        alt="Dramatic black and white portrait with flowing hair â Peter Farrar Portraits journal"
+        alt="Dramatic black and white portrait with flowing hair — Peter Farrar Portraits journal"
         width="1400"
         height="933"
         fetchpriority="high"
       />
       <div class="page-hero-overlay" aria-hidden="true"></div>
       <div class="page-hero-content">
-        <span class="page-hero-eyebrow">Thoughts Â· Stories Â· Inspiration</span>
+        <span class="page-hero-eyebrow">Thoughts · Stories · Inspiration</span>
         <h2 class="page-hero-title">The Journal</h2>
       </div>
     </section>
 
     <section class="blog-intro" aria-labelledby="blog-intro-heading">
       <div class="blog-intro-inner">
-        <span class="section-label">Portrait Photography Â· Basingstoke</span>
+        <span class="section-label">Portrait Photography · Basingstoke</span>
         <h1 id="blog-intro-heading">Photography insights from the studio</h1>
-        <p>Welcome to the Peter Farrar Portraits journal photography inspiration, behind-the-scenes stories, session guides and thoughts on making great portraits. New articles published regularly.</p>
+        <p>Welcome to the Peter Farrar Portraits journal — photography inspiration, behind-the-scenes stories, session guides and thoughts on making great portraits. New articles published regularly.</p>
       </div>
     </section>
 
@@ -290,18 +290,8 @@
 
           <!-- POSTS START -->
 
-        <article class="post-card">
-          <a href="/blog/a-busy-few-weeks-behind-the-scenes.html"><img class="post-card-img" src="/images/hero.jpg" alt="Professional portrait photography by Basingstoke photographer Peter Farrar, specialising in timeless and creative portraits." loading="lazy" /></a>
-          <div class="post-card-body">
-            <div class="post-card-meta"><span class="post-card-cat">Behind the Scenes</span><span>11 June 2026</span></div>
-            <h2><a href="/blog/a-busy-few-weeks-behind-the-scenes.html">A Busy Few Weeks Behind the Scenes</a></h2>
-            <p>Learn how automation is helping free up time for photography, plus details on free portrait shoots for aspiring male models.</p>
-            <a href="/blog/a-busy-few-weeks-behind-the-scenes.html" class="post-card-link">Read Article</a>
-          </div>
-        </article>
-
           <div class="posts-empty">
-            <div class="ornament" aria-hidden="true">â</div>
+            <div class="ornament" aria-hidden="true">◈</div>
             <h2>Articles coming soon</h2>
             <p>The journal is just getting started. Check back shortly for photography tips, session stories and studio inspiration.</p>
           </div>
@@ -331,7 +321,7 @@
           <li><a href="/about-peter-farrar">About</a></li>
           <li><a href="/portrait-gallery">Gallery</a></li>
           <li><a href="/investment">Investment</a></li>
-          <li><a href="/blog/">Journal</a></li>
+          <li><a href="/blog/index">Journal</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
@@ -342,7 +332,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Â© 2026 Peter Farrar Portraits. All rights reserved.</span>
+      <span>© 2026 Peter Farrar Portraits. All rights reserved.</span>
       <a href="/privacy-policy">Privacy Policy</a>
     </div>
   </footer>
