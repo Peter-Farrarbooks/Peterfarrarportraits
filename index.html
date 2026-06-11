@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-08STG260DS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-08STG260DS');
-</script>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -71,9 +61,7 @@
     "openingHours": "Mo-Sa 09:00-18:00",
     "sameAs": [
       "https://www.instagram.com/peterfarrarportraits",
-      "https://www.facebook.com/peterfarrarportraits",
-       "https://x.com/peterfportraits",
-      "https://www.threads.com/@peterfarrarportraits"
+      "https://www.facebook.com/peterfarrarportraits"
     ],
     "founder": {
       "@type": "Person",
@@ -563,11 +551,20 @@
 
     .footer-bottom a:hover { color: var(--gold); }
 
+    /* ── Hamburger ── */
+    .nav-toggle { display: none; flex-direction: column; justify-content: space-between; width: 26px; height: 18px; background: none; border: none; cursor: pointer; padding: 0; z-index: 200; }
+    .nav-toggle span { display: block; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s ease; }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
     /* ── Responsive ── */
     @media (max-width: 768px) {
       .site-nav { padding: 0 1.25rem; }
-
       .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.98); justify-content: center; align-items: center; gap: 2.5rem; z-index: 150; }
+      .nav-links.open a { font-size: 1rem; letter-spacing: 0.2em; }
 
       .hero-content {
         right: 5%;
@@ -603,12 +600,15 @@
       <img src="/images/favicon.png" alt="Peter Farrar Portraits logo" width="44" height="44" />
       <span class="nav-logo-text">Peter Farrar<br>Portraits</span>
     </a>
-    <ul class="nav-links" role="list">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
       <li><a href="/" aria-current="page">Home</a></li>
-      <li><a href="/about-peter-farrar">About</a></li>
-      <li><a href="/portrait-gallery">Gallery</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/gallery">Gallery</a></li>
       <li><a href="/investment">Investment</a></li>
-      <li><a href="/blog/index">Journal</a></li>
+      <li><a href="/blog/">Journal</a></li>
       <li><a href="/contact" class="nav-cta">Book a Session</a></li>
     </ul>
   </nav>
@@ -631,7 +631,7 @@
         <h1 class="hero-title">Peter Farrar<br>Portraits</h1>
         <p class="hero-sub">Timeless portraits that capture who you truly are.</p>
         <div class="hero-actions">
-          <a href="/portrait-gallery" class="btn btn-outline">View Gallery</a>
+          <a href="/gallery" class="btn btn-outline">View Gallery</a>
           <a href="/contact" class="btn btn-gold">Book a Session</a>
         </div>
       </div>
@@ -735,12 +735,12 @@
         <p class="footer-nav-title">Navigation</p>
         <ul class="footer-links" role="list">
           <li><a href="/">Home</a></li>
-          <li><a href="/about-peter-farrar">About</a></li>
-          <li><a href="/portrait-gallery">Gallery</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/gallery">Gallery</a></li>
           <li><a href="/investment">Investment</a></li>
-          <li><a href="/blog/index">Journal</a></li>
+          <li><a href="/blog/">Journal</a></li>
           <li><a href="/contact">Contact</a></li>
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/policy">Privacy Policy</a></li>
         </ul>
       </nav>
       <div class="footer-contact">
@@ -750,7 +750,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Peter Farrar Portraits. All rights reserved.</span>
-      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/policy">Privacy Policy</a>
     </div>
   </footer>
 
@@ -760,6 +760,26 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
+
+    // Mobile hamburger
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        document.body.style.overflow = '';
+      });
+    });
   </script>
 
 </body>
