@@ -457,9 +457,7 @@
       transition: color 0.2s;
     }
 
-    .footer-bottom a:hover { color: var(--gold); }
-
-   .footer-bottom a:hover { color: var(--gold); }
+ .footer-bottom a:hover { color: var(--gold); }
 
     /* ── Hamburger ── */
     .nav-toggle { display: none; flex-direction: column; justify-content: space-between; width: 26px; height: 18px; background: none; border: none; cursor: pointer; padding: 0; z-index: 200; }
@@ -498,7 +496,8 @@
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition: none !important; }
-    }    }
+    }
+
   </style>
 </head>
 
@@ -585,7 +584,6 @@
 
       </div>
     </section>
-
     <!-- ── Videos ── -->
     <section class="video-section" aria-labelledby="video-heading">
       <div class="video-section-inner">
@@ -601,7 +599,6 @@
                 title="Wedding Testimonial — Peter Farrar Portraits"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                loading="lazy"
               ></iframe>
             </div>
             <div class="video-caption">
@@ -617,7 +614,6 @@
                 title="A Couple's Love Story — Peter Farrar Portraits"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                loading="lazy"
               ></iframe>
             </div>
             <div class="video-caption">
@@ -633,13 +629,16 @@
                 title="Studio Time-Lapse — Peter Farrar Portraits"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                loading="lazy"
               ></iframe>
             </div>
             <div class="video-caption">
               <strong>Studio Time-Lapse</strong>
               <p>A behind-the-scenes time-lapse filmed in my Charlotte, North Carolina studio featuring my good friend Amy Castro HMUA.</p>
             </div>
+          </article>
+
+        </div>
+      </div>
           </article>
 
         </div>
@@ -655,6 +654,22 @@
 
   </main>
 
+    <!-- ── Page Hero ── -->
+    <div class="page-hero">
+      <img
+        class="page-hero-img"
+        src="/images/hero.jpg"
+        alt="Dramatic black and white portrait by Peter Farrar Portraits"
+        width="1400"
+        height="933"
+        fetchpriority="high"
+      />
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="page-hero-content">
+        <span class="page-eyebrow">The Photographer</span>
+        <h1>About Peter Farrar</h1>
+      </div>
+    </div>
   <!-- ── Footer ── -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="footer-inner">
