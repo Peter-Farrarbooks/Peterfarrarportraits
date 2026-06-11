@@ -15,12 +15,12 @@
   <title>Portrait Photography Journal | Peter Farrar Portraits, Basingstoke</title>
   <meta name="description" content="Photography insights, session stories and portrait tips from Peter Farrar Portraits, Basingstoke. Read the journal for inspiration and behind-the-scenes articles." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.peterfarrarportraits.com/blog/" />
+  <link rel="canonical" href="https://www.peterfarrarportraits.com/blog/index" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Portrait Photography Journal | Peter Farrar Portraits" />
   <meta property="og:description" content="Photography insights, session stories and portrait tips from Peter Farrar Portraits, Basingstoke." />
-  <meta property="og:url" content="https://www.peterfarrarportraits.com/blog/" />
+  <meta property="og:url" content="https://www.peterfarrarportraits.com/blog/index" />
   <meta property="og:image" content="https://www.peterfarrarportraits.com/images/hero.jpg" />
   <meta property="og:site_name" content="Peter Farrar Portraits" />
   <meta property="og:locale" content="en_GB" />
@@ -40,7 +40,7 @@
     "@id": "https://www.peterfarrarportraits.com/blog/#blog",
     "name": "Peter Farrar Portraits Journal",
     "description": "Photography insights, session stories and portrait tips from portrait photographer Peter Farrar, based in Basingstoke, Hampshire.",
-    "url": "https://www.peterfarrarportraits.com/blog/",
+    "url": "https://www.peterfarrarportraits.com/blog/index",
     "publisher": {
       "@type": "LocalBusiness",
       "name": "Peter Farrar Portraits",
@@ -81,8 +81,15 @@
     img { display: block; max-width: 100%; height: auto; }
     a { color: inherit; text-decoration: none; }
 
-    /* ââ Nav ââ */
-    .site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; background: rgba(10,10,10,0.97); }
+    /* ── Nav ── */
+    .site-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h); display: flex; align-items: center;
+      justify-content: space-between; padding: 0 2.5rem;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, transparent 100%);
+      transition: background 0.3s ease;
+    }
+    .site-nav.scrolled { background: rgba(10,10,10,0.97); }
     .nav-logo { display: flex; align-items: center; gap: 0.75rem; }
     .nav-logo img { width: 44px; height: 44px; border-radius: 50%; }
     .nav-logo-text { font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); line-height: 1.2; }
@@ -97,116 +104,64 @@
     .nav-toggle.open span:nth-child(2) { opacity: 0; }
     .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-    /* ââ Hero ââ */
-    .page-hero { position: relative; height: 52vh; min-height: 360px; overflow: hidden; }
-    .page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-    .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.6) 100%); }
-    .page-hero-content { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; padding: 0 2rem 3.5rem; }
-    .page-hero-eyebrow { display: block; font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
-    .page-hero-title { font-size: clamp(2rem,5vw,3.2rem); font-weight: 400; color: var(--white); letter-spacing: 0.08em; text-transform: uppercase; }
+    /* ── Page Hero ── */
+    .page-hero {
+      position: relative;
+      height: 100svh;
+      min-height: 600px;
+      overflow: hidden;
+    }
+    .page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 45%, rgba(0,0,0,0.65) 100%); }
+    .page-hero-content {
+      position: absolute;
+      bottom: 12%;
+      right: 6%;
+      text-align: right;
+      max-width: 420px;
+    }
+    .page-hero-eyebrow { display: block; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+    .page-hero-title { font-family: 'Georgia', serif; font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 400; line-height: 1.1; color: var(--white); letter-spacing: 0.04em; text-transform: none; }
 
-    /* ââ Intro ââ */
+    /* ── Intro ── */
     .blog-intro { background: var(--white); padding: 4rem 2rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.07); }
     .blog-intro-inner { max-width: var(--max-w); margin: 0 auto; }
     .section-label { display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
     .blog-intro h1 { font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
     .blog-intro p { font-size: 0.92rem; color: #444; max-width: 680px; }
 
-    /* ââ Posts grid ââ */
+    /* ── Posts grid ── */
     .posts-section { padding: 3rem 2rem 5rem; background: #f9f7f4; }
     .posts-inner { max-width: var(--max-w); margin: 0 auto; }
+    .posts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 
-    .posts-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-
-    /* ââ Post card ââ */
-    .post-card {
-      background: var(--white);
-      border-top: 2px solid var(--gold);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .post-card-img {
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-      display: block;
-    }
-
-    .post-card-body {
-      padding: 1.5rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .post-card-meta {
-      display: flex;
-      gap: 1rem;
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-    }
-
+    /* ── Post card ── */
+    .post-card { background: var(--white); border-top: 2px solid var(--gold); display: flex; flex-direction: column; }
+    .post-card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .post-card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .post-card-meta { display: flex; gap: 1rem; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 0.75rem; }
     .post-card-cat { color: var(--gold); }
     .post-card-meta span:not(.post-card-cat) { color: var(--grey); }
-
-    .post-card h2 {
-      font-size: 1.05rem;
-      font-weight: 400;
-      color: var(--dark);
-      line-height: 1.35;
-      margin-bottom: 0.75rem;
-    }
-
+    .post-card h2 { font-size: 1.05rem; font-weight: 400; color: var(--dark); line-height: 1.35; margin-bottom: 0.75rem; }
     .post-card h2 a:hover { color: var(--gold); }
-
-    .post-card p {
-      font-size: 0.85rem;
-      color: #555;
-      line-height: 1.7;
-      flex: 1;
-      margin-bottom: 1.25rem;
-      font-style: italic;
-    }
-
-    .post-card-link {
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--gold);
-      border-bottom: 1px solid var(--gold);
-      padding-bottom: 2px;
-      align-self: flex-start;
-      transition: color 0.2s;
-    }
-
+    .post-card p { font-size: 0.85rem; color: #555; line-height: 1.7; flex: 1; margin-bottom: 1.25rem; font-style: italic; }
+    .post-card-link { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 2px; align-self: flex-start; transition: color 0.2s; }
     .post-card-link:hover { color: var(--gold-lt); }
 
     /* Empty state */
-    .posts-empty {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
+    .posts-empty { grid-column: 1 / -1; text-align: center; padding: 4rem 2rem; }
     .posts-empty .ornament { font-size: 2rem; color: var(--gold); margin-bottom: 1.5rem; }
     .posts-empty h2 { font-size: 1.6rem; font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
     .posts-empty p { font-size: 0.9rem; color: var(--grey); font-style: italic; max-width: 420px; margin: 0 auto 2rem; }
 
-    /* ââ CTA ââ */
+    /* ── CTA ── */
     .cta-banner { background: var(--gold); padding: 4rem 2rem; text-align: center; }
     .cta-banner h2 { font-size: clamp(1.3rem,2.5vw,1.9rem); font-weight: 400; color: var(--black); margin-bottom: 0.75rem; }
     .cta-banner p { font-size: 0.92rem; color: rgba(10,10,10,0.75); margin-bottom: 2rem; }
     .btn-dark { background: var(--black); color: var(--white); border: 1px solid var(--black); display: inline-block; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.8rem 1.8rem; transition: background 0.2s; }
     .btn-dark:hover { background: var(--dark); }
 
-    /* ââ Footer ââ */
+    /* ── Footer ── */
     .site-footer { background: var(--black); color: rgba(245,242,238,0.5); padding: 3rem 2rem; }
     .footer-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
     .footer-brand p { font-size: 0.8rem; line-height: 1.7; margin-top: 0.75rem; }
@@ -219,13 +174,14 @@
     .footer-bottom a { color: rgba(245,242,238,0.4); transition: color 0.2s; }
     .footer-bottom a:hover { color: var(--gold); }
 
-    /* ââ Responsive ââ */
+    /* ── Responsive ── */
     @media (max-width: 768px) {
       .site-nav { padding: 0 1.25rem; }
       .nav-links { display: none; }
       .nav-toggle { display: flex; }
       .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.98); justify-content: center; align-items: center; gap: 2.5rem; z-index: 150; }
       .nav-links.open a { font-size: 1rem; letter-spacing: 0.2em; }
+      .page-hero-content { right: 5%; left: 5%; bottom: 10%; text-align: left; max-width: 100%; }
       .posts-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
@@ -264,23 +220,23 @@
       <img
         class="page-hero-img"
         src="/images/hero.jpg"
-        alt="Dramatic black and white portrait with flowing hair â Peter Farrar Portraits journal"
+        alt="Dramatic black and white portrait by Peter Farrar Portraits"
         width="1400"
         height="933"
         fetchpriority="high"
       />
       <div class="page-hero-overlay" aria-hidden="true"></div>
       <div class="page-hero-content">
-        <span class="page-hero-eyebrow">Thoughts Â· Stories Â· Inspiration</span>
+        <span class="page-hero-eyebrow">Thoughts · Stories · Inspiration</span>
         <h2 class="page-hero-title">The Journal</h2>
       </div>
     </section>
 
     <section class="blog-intro" aria-labelledby="blog-intro-heading">
       <div class="blog-intro-inner">
-        <span class="section-label">Portrait Photography Â· Basingstoke</span>
+        <span class="section-label">Portrait Photography · Basingstoke</span>
         <h1 id="blog-intro-heading">Photography insights from the studio</h1>
-        <p>Welcome to the Peter Farrar Portraits journal, photography inspiration, behind-the-scenes stories, session guides and thoughts on making great portraits. New articles published regularly.</p>
+        <p>Welcome to the Peter Farrar Portraits journal — photography inspiration, behind-the-scenes stories, session guides and thoughts on making great portraits. New articles published regularly.</p>
       </div>
     </section>
 
@@ -290,18 +246,18 @@
 
           <!-- POSTS START -->
 
-        <article class="post-card">
-          <a href="/blog/a-busy-few-weeks-behind-the-scenes.html"><img class="post-card-img" src="/images/hero.jpg" alt="Creative black and white portrait photography, Basingstoke photographer Peter Farrar in Hampshire." loading="lazy" /></a>
-          <div class="post-card-body">
-            <div class="post-card-meta"><span class="post-card-cat">Behind the Scenes</span><span>11 June 2026</span></div>
-            <h2><a href="/blog/a-busy-few-weeks-behind-the-scenes.html">A Busy Few Weeks Behind the Scenes</a></h2>
-            <p>Learn how automation is helping free up time for photography, plus details on free portrait shoots for aspiring male models.</p>
-            <a href="/blog/a-busy-few-weeks-behind-the-scenes.html" class="post-card-link">Read Article</a>
-          </div>
-        </article>
+          <article class="post-card">
+            <a href="/blog/a-busy-few-weeks-behind-the-scenes.html"><img class="post-card-img" src="/images/hero.jpg" alt="Creative black and white portrait photography, Basingstoke photographer Peter Farrar in Hampshire." loading="lazy" /></a>
+            <div class="post-card-body">
+              <div class="post-card-meta"><span class="post-card-cat">Behind the Scenes</span><span>11 June 2026</span></div>
+              <h2><a href="/blog/a-busy-few-weeks-behind-the-scenes.html">A Busy Few Weeks Behind the Scenes</a></h2>
+              <p>Learn how automation is helping free up time for photography, plus details on free portrait shoots for aspiring male models.</p>
+              <a href="/blog/a-busy-few-weeks-behind-the-scenes.html" class="post-card-link">Read Article</a>
+            </div>
+          </article>
 
           <div class="posts-empty">
-            <div class="ornament" aria-hidden="true">â</div>
+            <div class="ornament" aria-hidden="true">◈</div>
             <h2>Articles coming soon</h2>
             <p>The journal is just getting started. Check back shortly for photography tips, session stories and studio inspiration.</p>
           </div>
@@ -342,12 +298,19 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Â© 2026 Peter Farrar Portraits. All rights reserved.</span>
+      <span>© 2026 Peter Farrar Portraits. All rights reserved.</span>
       <a href="/privacy-policy">Privacy Policy</a>
     </div>
   </footer>
 
   <script>
+    // Scroll-aware nav background
+    const nav = document.getElementById('site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Mobile hamburger
     const toggle = document.getElementById('nav-toggle');
     const links  = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
