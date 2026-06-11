@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-08STG260DS');
 </script>
 
@@ -18,13 +17,13 @@
   <title>About Peter Farrar | Portrait Photographer in Basingstoke, Hampshire</title>
   <meta name="description" content="Peter Farrar is a professional portrait photographer, author and mentor based in Basingstoke, Hampshire. Decades of experience photographing people across the UK and USA." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.peterfarrarportraits.com/about" />
+  <link rel="canonical" href="https://www.peterfarrarportraits.com/about-peter-farrar" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="About Peter Farrar | Portrait Photographer in Basingstoke" />
   <meta property="og:description" content="Peter Farrar is a professional portrait photographer, author and mentor based in Basingstoke, Hampshire. Decades of experience photographing people across the UK and USA." />
-  <meta property="og:url" content="https://www.peterfarrarportraits.com/about" />
+  <meta property="og:url" content="https://www.peterfarrarportraits.com/about-peter-farrar" />
   <meta property="og:image" content="https://www.peterfarrarportraits.com/images/og-about.jpg" />
   <meta property="og:site_name" content="Peter Farrar Portraits" />
   <meta property="og:locale" content="en_GB" />
@@ -50,7 +49,7 @@
       "name": "Peter Farrar",
       "jobTitle": "Portrait Photographer",
       "description": "Professional portrait photographer, author and mentor based in Basingstoke, Hampshire with decades of experience photographing people across the UK and USA.",
-      "url": "https://www.peterfarrarportraits.com/about",
+      "url": "https://www.peterfarrarportraits.com/about-peter-farrar",
       "image": "https://www.peterfarrarportraits.com/images/og-about.jpg",
       "worksFor": {
         "@type": "LocalBusiness",
@@ -69,6 +68,7 @@
   </script>
 
   <style>
+    /* ── Reset & Base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -168,15 +168,22 @@
       color: var(--black) !important;
     }
 
-    /* ── Hero ── */
-    .hero {
+    /* ── Hamburger ── */
+    .nav-toggle { display: none; flex-direction: column; justify-content: space-between; width: 26px; height: 18px; background: none; border: none; cursor: pointer; padding: 0; z-index: 200; }
+    .nav-toggle span { display: block; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s ease; }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* ── Page Hero ── */
+    .page-hero {
       position: relative;
-      height: 100svh;
-      min-height: 600px;
+      height: 60vh;
+      min-height: 400px;
       overflow: hidden;
     }
 
-    .hero-img {
+    .page-hero-img {
       position: absolute;
       inset: 0;
       width: 100%;
@@ -185,18 +192,18 @@
       object-position: center top;
     }
 
-    .hero-overlay {
+    .page-hero-overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(
         120deg,
         rgba(0,0,0,0.15) 0%,
         rgba(0,0,0,0.05) 45%,
-        rgba(0,0,0,0.55) 100%
+        rgba(0,0,0,0.65) 100%
       );
     }
 
-    .hero-content {
+    .page-hero-content {
       position: absolute;
       bottom: 12%;
       right: 6%;
@@ -204,7 +211,7 @@
       max-width: 420px;
     }
 
-    .hero-eyebrow {
+    .page-eyebrow {
       display: block;
       font-size: 0.7rem;
       letter-spacing: 0.25em;
@@ -213,31 +220,16 @@
       margin-bottom: 0.75rem;
     }
 
-    .hero-title {
+    .page-hero-content h1 {
       font-family: 'Georgia', serif;
-      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
       font-weight: 400;
       line-height: 1.1;
       color: var(--white);
       letter-spacing: 0.04em;
-      margin-bottom: 1.25rem;
     }
 
-    .hero-sub {
-      font-size: 0.9rem;
-      color: rgba(245,242,238,0.8);
-      margin-bottom: 2rem;
-      line-height: 1.6;
-      font-style: italic;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      justify-content: flex-end;
-    }
-
-    /* ── Content ── */
+    /* ── Section base ── */
     .section {
       padding: 5rem 2rem;
     }
@@ -275,7 +267,6 @@
       margin-bottom: 1rem;
     }
 
-    /* ── Sections within bio ── */
     .bio-section {
       margin-top: 3rem;
       padding-top: 2.5rem;
@@ -465,6 +456,18 @@
     @media (max-width: 768px) {
       .site-nav { padding: 0 1.25rem; }
       .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.98); justify-content: center; align-items: center; gap: 2.5rem; z-index: 150; }
+      .nav-links.open a { font-size: 1rem; letter-spacing: 0.2em; }
+
+      .page-hero-content {
+        right: 5%;
+        left: 5%;
+        bottom: 10%;
+        text-align: left;
+        max-width: 100%;
+      }
+
       .video-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; }
       .section { padding: 3.5rem 1.25rem; }
@@ -480,12 +483,15 @@
 <body>
 
   <!-- ── Navigation ── -->
-  <nav class="site-nav" aria-label="Main navigation">
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
     <a href="/" class="nav-logo" aria-label="Peter Farrar Portraits home">
       <img src="/images/favicon.png" alt="Peter Farrar Portraits logo" width="44" height="44" />
       <span class="nav-logo-text">Peter Farrar<br>Portraits</span>
     </a>
-    <ul class="nav-links" role="list">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
       <li><a href="/">Home</a></li>
       <li><a href="/about-peter-farrar" aria-current="page">About</a></li>
       <li><a href="/portrait-gallery">Gallery</a></li>
@@ -562,68 +568,64 @@
     </section>
 
     <!-- ── Videos ── -->
-<section class="video-section" aria-labelledby="video-heading">
-  <div class="video-section-inner">
-    <span class="section-label" style="color:var(--gold);">Behind the Lens</span>
-    <h2 id="video-heading">Peter Farrar in Action</h2>
-    <p class="video-section-sub">A selection of film and testimonial work from across the years.</p>
+    <section class="video-section" aria-labelledby="video-heading">
+      <div class="video-section-inner">
+        <span class="section-label" style="color:var(--gold);">Behind the Lens</span>
+        <h2 id="video-heading">Peter Farrar in Action</h2>
+        <p class="video-section-sub">A selection of film and testimonial work from across the years.</p>
 
-    <div class="video-grid">
+        <div class="video-grid">
 
-      <article class="video-card">
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/nLftjARCG68?rel=0&modestbranding=1"
-            loading="eager"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="Wedding Testimonial — Peter Farrar Portraits"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="video-caption">
-          <strong>Wedding Testimonial</strong>
-          <p>Testimonial from a wedding couple after their wedding day. They later visited my studio for a relaxed chat and kindly shared their experience of working with me.</p>
-        </div>
-      </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/nLftjARCG68?rel=0&modestbranding=1"
+                loading="eager"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Wedding Testimonial — Peter Farrar Portraits"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-caption">
+              <strong>Wedding Testimonial</strong>
+              <p>Testimonial from a wedding couple after their wedding day. They later visited my studio for a relaxed chat and kindly shared their experience of working with me.</p>
+            </div>
+          </article>
 
-      <article class="video-card">
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/UBt30x_ohE4?rel=0&modestbranding=1"
-            loading="eager"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="A Couple's Love Story — Peter Farrar Portraits"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="video-caption">
-          <strong>A Couple's Love Story</strong>
-          <p>A romantic love story filmed at the beautiful Land of Oz and Beach Mountain area of North Carolina, USA.</p>
-        </div>
-      </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/UBt30x_ohE4?rel=0&modestbranding=1"
+                loading="eager"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="A Couple's Love Story — Peter Farrar Portraits"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-caption">
+              <strong>A Couple's Love Story</strong>
+              <p>A romantic love story filmed at the beautiful Land of Oz and Beach Mountain area of North Carolina, USA.</p>
+            </div>
+          </article>
 
-      <article class="video-card">
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/rB7kJ6tSQKg?rel=0&modestbranding=1"
-            loading="eager"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="Studio Time-Lapse — Peter Farrar Portraits"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="video-caption">
-          <strong>Studio Time-Lapse</strong>
-          <p>A behind-the-scenes time-lapse filmed in my Charlotte, North Carolina studio featuring my good friend Amy Castro HMUA.</p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/rB7kJ6tSQKg?rel=0&modestbranding=1"
+                loading="eager"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Studio Time-Lapse — Peter Farrar Portraits"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-caption">
+              <strong>Studio Time-Lapse</strong>
+              <p>A behind-the-scenes time-lapse filmed in my Charlotte, North Carolina studio featuring my good friend Amy Castro HMUA.</p>
+            </div>
+          </article>
 
         </div>
       </div>
@@ -664,11 +666,12 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Peter Farrar Portraits. All rights reserved.</span>
-      <a href="/policy">Privacy Policy</a>
+      <a href="/privacy-policy">Privacy Policy</a>
     </div>
   </footer>
+
   <script>
-    // Scroll-aware nav
+    // Scroll-aware nav background
     const nav = document.getElementById('site-nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
