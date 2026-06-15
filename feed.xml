@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Peter Farrar Portraits — Journal</title>
+    <link>https://www.peterfarrarportraits.com/</link>
+    <description>Portrait photography insights, session stories and inspiration from Peter Farrar Portraits, Basingstoke, Hampshire.</description>
+    <language>en-GB</language>
+    <atom:link href="https://www.peterfarrarportraits.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Busy Few Weeks Behind the Scenes | Peter Farrar Portraits</title>
+      <link>https://www.peterfarrarportraits.com/blog/a-busy-few-weeks-behind-the-scenes.html</link>
+      <description>Learn how automation is helping free up time for photography, plus details on free portrait shoots for aspiring male models.</description>
+      <pubDate>Mon, 15 Jun 2026 09:00:00 +0000</pubDate>
+      <guid>https://www.peterfarrarportraits.com/blog/a-busy-few-weeks-behind-the-scenes.html</guid>
+      <media:content url="https://www.peterfarrarportraits.com/images/hero.jpg" medium="image" />
+    </item>
+  </channel>
+</rss>
