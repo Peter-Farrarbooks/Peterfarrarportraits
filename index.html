@@ -122,7 +122,11 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 2.5rem;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, transparent 100%);
+      /* FIX: solid dark background instead of a transparent-to-clear gradient.
+         The old gradient let the hero text show through and visually collide
+         with the nav links at the top of the page. */
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(6px);
       transition: background 0.3s ease;
     }
 
@@ -214,10 +218,19 @@
 
     .hero-content {
       position: absolute;
+      /* FIX: pinned below the fixed nav height (var(--nav-h)) with extra
+         breathing room, instead of a bare bottom/right percentage that could
+         ride up under the nav at certain viewport heights. */
+      top: calc(var(--nav-h) + 2rem);
       bottom: 12%;
       right: 6%;
+      left: 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       text-align: right;
-      max-width: 420px;
+      max-width: 480px;
+      margin-left: auto;
     }
 
     .hero-eyebrow {
@@ -231,12 +244,17 @@
 
     .hero-title {
       font-family: 'Georgia', serif;
-      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      /* FIX: removed the manual <br> after "Hampshire" in the markup below
+         and tightened the clamp's max so the title wraps naturally as a
+         normal paragraph rather than forcing a break that strands "in" on
+         its own line at common desktop widths. */
+      font-size: clamp(2rem, 4.2vw, 3.4rem);
       font-weight: 400;
-      line-height: 1.1;
+      line-height: 1.15;
       color: var(--white);
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       margin-bottom: 1.25rem;
+      text-wrap: balance;
     }
 
     .hero-sub {
@@ -578,11 +596,13 @@
       .nav-links.open a { font-size: 1rem; letter-spacing: 0.2em; }
 
       .hero-content {
+        top: calc(var(--nav-h) + 1.5rem);
         right: 5%;
         left: 5%;
         bottom: 10%;
         text-align: left;
         max-width: 100%;
+        margin-left: 0;
       }
 
       .hero-actions { justify-content: flex-start; }
