@@ -122,16 +122,13 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 2.5rem;
-      /* FIX: solid dark background instead of a transparent-to-clear gradient.
-         The old gradient let the hero text show through and visually collide
-         with the nav links at the top of the page. */
-      background: rgba(10,10,10,0.92);
-      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0) 100%);
       transition: background 0.3s ease;
     }
 
     .site-nav.scrolled {
       background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(6px);
     }
 
     .nav-logo {
@@ -218,9 +215,6 @@
 
     .hero-content {
       position: absolute;
-      /* FIX: pinned below the fixed nav height (var(--nav-h)) with extra
-         breathing room, instead of a bare bottom/right percentage that could
-         ride up under the nav at certain viewport heights. */
       top: calc(var(--nav-h) + 2rem);
       bottom: 12%;
       right: 6%;
@@ -244,10 +238,6 @@
 
     .hero-title {
       font-family: 'Georgia', serif;
-      /* FIX: removed the manual <br> after "Hampshire" in the markup below
-         and tightened the clamp's max so the title wraps naturally as a
-         normal paragraph rather than forcing a break that strands "in" on
-         its own line at common desktop widths. */
       font-size: clamp(2rem, 4.2vw, 3.4rem);
       font-weight: 400;
       line-height: 1.15;
