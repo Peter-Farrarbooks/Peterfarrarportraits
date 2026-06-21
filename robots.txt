@@ -8,15 +8,15 @@ Allow: /
 Sitemap: https://www.peterfarrarportraits.com/sitemap.xml
 
 # ============================
-# AI Content Signals
+# AI Content Signals (informational only)
 # ============================
 # search=yes     → Allow search engines to index normally
 # ai-input=no    → Block use of content for AI grounding / RAG
 # ai-train=no    → Block use of content for AI model training
-
-content-signals: search=yes
-content-signals: ai-input=no
-content-signals: ai-train=no
+#
+# content-signals: search=yes
+# content-signals: ai-input=no
+# content-signals: ai-train=no
 
 # ============================
 # Legal Notice
