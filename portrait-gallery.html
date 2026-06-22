@@ -38,31 +38,31 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
 
   <!-- JSON-LD Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ImageGallery",
-  "name": "Peter Farrar Portraits — Portrait Photography Gallery",
-  "description": "A selection of studio and location portrait photography by Peter Farrar, based in Basingstoke, Hampshire.",
-  "url": "https://www.peterfarrarportraits.com/portrait-gallery",
-  "author": {
-    "@type": "Person",
-    "name": "Peter Farrar",
-    "url": "https://www.peterfarrarportraits.com/about-peter-farrar"
-  },
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Peter Farrar Portraits",
-    "url": "https://www.peterfarrarportraits.com/",
-    "sameAs": [
-      "https://www.facebook.com/peterfarrarportraits",
-      "https://www.instagram.com/peterfarrarportraits",
-      "https://x.com/peterfportraits",
-      "https://www.threads.com/@peterfarrarportraits"
-    ]
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Peter Farrar Portraits — Portrait Photography Gallery",
+    "description": "A selection of studio and location portrait photography by Peter Farrar, based in Basingstoke, Hampshire.",
+    "url": "https://www.peterfarrarportraits.com/portrait-gallery",
+    "author": {
+      "@type": "Person",
+      "name": "Peter Farrar",
+      "url": "https://www.peterfarrarportraits.com/about-peter-farrar"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Peter Farrar Portraits",
+      "url": "https://www.peterfarrarportraits.com/",
+      "sameAs": [
+        "https://www.facebook.com/peterfarrarportraits",
+        "https://www.instagram.com/peterfarrarportraits",
+        "https://x.com/peterfportraits",
+        "https://www.threads.com/@peterfarrarportraits"
+      ]
+    }
   }
-}
-</script>
+  </script>
   <style>
     /* ── Reset & Base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -81,88 +81,21 @@
     }
 
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      background: var(--white);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
+    body { font-family: 'Georgia', 'Times New Roman', serif; background: var(--white); color: var(--text); line-height: 1.7; }
     img { display: block; max-width: 100%; height: auto; }
     a { color: inherit; text-decoration: none; }
 
     /* ── Navigation ── */
-    .site-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      height: var(--nav-h);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 2.5rem;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, transparent 100%);
-      transition: background 0.3s ease;
-    }
-
-    .site-nav.scrolled {
-      background: rgba(10,10,10,0.97);
-    }
-
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .nav-logo img {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-    }
-
-    .nav-logo-text {
-      font-family: 'Georgia', serif;
-      font-size: 0.85rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--white);
-      line-height: 1.2;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 2.25rem;
-      align-items: center;
-    }
-
-    .nav-links a {
-      font-family: 'Georgia', serif;
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(245,242,238,0.85);
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover,
-    .nav-links a[aria-current="page"] { color: var(--gold); }
-
-    .nav-cta {
-      border: 1px solid var(--gold) !important;
-      padding: 0.45rem 1.1rem !important;
-      color: var(--gold) !important;
-      transition: background 0.2s, color 0.2s !important;
-    }
-
-    .nav-cta:hover {
-      background: var(--gold) !important;
-      color: var(--black) !important;
-    }
-
-    /* ── Hamburger ── */
+    .site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; padding: 0 2.5rem; background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, transparent 100%); transition: background 0.3s ease; }
+    .site-nav.scrolled { background: rgba(10,10,10,0.97); }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; }
+    .nav-logo img { width: 44px; height: 44px; border-radius: 50%; }
+    .nav-logo-text { font-family: 'Georgia', serif; font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); line-height: 1.2; }
+    .nav-links { display: flex; list-style: none; gap: 2.25rem; align-items: center; }
+    .nav-links a { font-family: 'Georgia', serif; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,242,238,0.85); transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--gold); }
+    .nav-cta { border: 1px solid var(--gold) !important; padding: 0.45rem 1.1rem !important; color: var(--gold) !important; transition: background 0.2s, color 0.2s !important; }
+    .nav-cta:hover { background: var(--gold) !important; color: var(--black) !important; }
     .nav-toggle { display: none; flex-direction: column; justify-content: space-between; width: 26px; height: 18px; background: none; border: none; cursor: pointer; padding: 0; z-index: 200; }
     .nav-toggle span { display: block; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s ease; }
     .nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -170,354 +103,90 @@
     .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
     /* ── Page Hero ── */
-    .page-hero {
-      position: relative;
-      height: 100svh;
-      min-height: 600px;
-      overflow: hidden;
-    }
-
-    .page-hero-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-    }
-
-    .page-hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        120deg,
-        rgba(0,0,0,0.15) 0%,
-        rgba(0,0,0,0.05) 45%,
-        rgba(0,0,0,0.65) 100%
-      );
-    }
-
-    .page-hero-content {
-      position: absolute;
-      bottom: 12%;
-      right: 6%;
-      text-align: right;
-      max-width: 420px;
-    }
-
-    .page-eyebrow {
-      display: block;
-      font-size: 0.7rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 0.75rem;
-    }
-
-    .page-hero-content h1 {
-      font-family: 'Georgia', serif;
-      font-size: clamp(2rem, 4.5vw, 3.4rem);
-      font-weight: 400;
-      line-height: 1.1;
-      color: var(--white);
-      letter-spacing: 0.04em;
-    }
+    .page-hero { position: relative; height: 100svh; min-height: 600px; overflow: hidden; }
+    .page-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 45%, rgba(0,0,0,0.65) 100%); }
+    .page-hero-content { position: absolute; bottom: 12%; right: 6%; text-align: right; max-width: 420px; }
+    .page-eyebrow { display: block; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+    .page-hero-content h1 { font-family: 'Georgia', serif; font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 400; line-height: 1.1; color: var(--white); letter-spacing: 0.04em; }
 
     /* ── Sections ── */
     .section { padding: 5rem 2rem; }
-
-    .section-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
-    .section-label {
-      display: block;
-      font-size: 0.68rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-    }
+    .section-inner { max-width: var(--max-w); margin: 0 auto; }
+    .section-label { display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
 
     /* ── Intro text ── */
     .gallery-intro { background: var(--white); padding-bottom: 2rem; }
-
-    .gallery-intro h2 {
-      font-size: clamp(1.3rem, 2.5vw, 1.9rem);
-      font-weight: 400;
-      color: var(--dark);
-      margin-bottom: 1.25rem;
-    }
-
-    .gallery-intro p {
-      font-size: 0.95rem;
-      color: #3a3a3a;
-      margin-bottom: 1rem;
-      max-width: 720px;
-    }
+    .gallery-intro h2 { font-size: clamp(1.3rem, 2.5vw, 1.9rem); font-weight: 400; color: var(--dark); margin-bottom: 1.25rem; }
+    .gallery-intro p { font-size: 0.95rem; color: #3a3a3a; margin-bottom: 1rem; max-width: 720px; }
 
     /* ── Slideshow ── */
-    .slideshow-section {
-      background: var(--dark);
-      padding: 4rem 2rem;
-    }
-
-    .slideshow-section-inner {
-      max-width: 520px;
-      margin: 0 auto;
-    }
-
-    .slideshow-wrapper {
-      position: relative;
-      background: var(--black);
-      overflow: hidden;
-    }
-
-    .mySlides {
-      display: none;
-      position: relative;
-    }
-
+    .slideshow-section { background: var(--dark); padding: 4rem 2rem; }
+    .slideshow-section-inner { max-width: 520px; margin: 0 auto; }
+    .slideshow-wrapper { position: relative; background: var(--black); overflow: hidden; }
+    .mySlides { display: none; position: relative; }
     .mySlides.active { display: block; }
-
-    .mySlides img {
-      width: 100%;
-      height: auto;
-      max-height: 520px;
-      object-fit: cover;
-      object-position: center 20%;
-      display: block;
-    }
-
-    .caption-text {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 1rem 1.5rem;
-      background: linear-gradient(transparent, rgba(0,0,0,0.7));
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(245,242,238,0.75);
-    }
-
-    /* Prev / Next */
-    .slide-prev,
-    .slide-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0,0,0,0.45);
-      border: 1px solid rgba(201,168,76,0.4);
-      color: var(--white);
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background 0.2s, border-color 0.2s;
-      user-select: none;
-    }
-
+    .mySlides img { width: 100%; height: auto; max-height: 520px; object-fit: cover; object-position: center 20%; display: block; }
+    .caption-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem 1.5rem; background: linear-gradient(transparent, rgba(0,0,0,0.7)); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(245,242,238,0.75); }
+    .slide-prev, .slide-next { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.45); border: 1px solid rgba(201,168,76,0.4); color: var(--white); font-size: 1.1rem; cursor: pointer; transition: background 0.2s, border-color 0.2s; user-select: none; }
     .slide-prev { left: 1rem; }
     .slide-next { right: 1rem; }
-
-    .slide-prev:hover,
-    .slide-next:hover {
-      background: rgba(201,168,76,0.3);
-      border-color: var(--gold);
-    }
-
-    /* Dots */
-    .slide-dots {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1.25rem;
-      flex-wrap: wrap;
-    }
-
-    .dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: rgba(245,242,238,0.25);
-      cursor: pointer;
-      transition: background 0.2s;
-      border: none;
-      padding: 0;
-    }
-
+    .slide-prev:hover, .slide-next:hover { background: rgba(201,168,76,0.3); border-color: var(--gold); }
+    .slide-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.25rem; flex-wrap: wrap; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(245,242,238,0.25); cursor: pointer; transition: background 0.2s; border: none; padding: 0; }
     .dot.active { background: var(--gold); }
-
-    /* Fade animation */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     .mySlides.active { animation: fadeIn 0.5s ease; }
 
     /* ── Below gallery text ── */
-    .gallery-below {
-      background: var(--white);
-      padding: 5rem 2rem;
-    }
+    .gallery-below { background: var(--white); padding: 5rem 2rem; }
+    .gallery-below-inner { max-width: var(--max-w); margin: 0 auto; }
+    .gallery-below h2 { font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 400; color: var(--dark); margin-bottom: 1.25rem; }
+    .gallery-below p { font-size: 0.95rem; color: #3a3a3a; margin-bottom: 1rem; max-width: 720px; }
+    .session-types { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+    .session-type { padding: 1.25rem 1.5rem; border-left: 2px solid var(--gold); background: #f9f7f4; }
+    .session-type h3 { font-size: 0.88rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark); margin-bottom: 0.4rem; }
+    .session-type p { font-size: 0.85rem; color: var(--grey); margin: 0; }
 
-    .gallery-below-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
+    /* ── Approach section ── */
+    .approach-section { background: var(--dark); padding: 5rem 2rem; }
+    .approach-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .approach-inner h2 { font-size: clamp(1.2rem, 2.2vw, 1.65rem); font-weight: 400; color: var(--white); margin-bottom: 1.25rem; }
+    .approach-inner p { font-size: 0.92rem; color: rgba(245,242,238,0.65); line-height: 1.8; margin-bottom: 1rem; }
+    .approach-inner a { color: var(--gold); }
+    .approach-principles { display: flex; flex-direction: column; gap: 1.25rem; }
+    .principle { border-left: 2px solid var(--gold); padding-left: 1rem; }
+    .principle strong { display: block; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; }
+    .principle span { font-size: 0.88rem; color: rgba(245,242,238,0.6); line-height: 1.6; }
 
-    .gallery-below h2 {
-      font-size: clamp(1.2rem, 2vw, 1.6rem);
-      font-weight: 400;
-      color: var(--dark);
-      margin-bottom: 1.25rem;
-    }
-
-    .gallery-below p {
-      font-size: 0.95rem;
-      color: #3a3a3a;
-      margin-bottom: 1rem;
-      max-width: 720px;
-    }
-
-    .session-types {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .session-type {
-      padding: 1.25rem 1.5rem;
-      border-left: 2px solid var(--gold);
-      background: #f9f7f4;
-    }
-
-    .session-type h3 {
-      font-size: 0.88rem;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--dark);
-      margin-bottom: 0.4rem;
-    }
-
-    .session-type p {
-      font-size: 0.85rem;
-      color: var(--grey);
-      margin: 0;
-    }
+    /* ── Local section ── */
+    .gallery-local { background: #f9f7f4; padding: 4rem 2rem; border-top: 1px solid rgba(0,0,0,0.07); }
+    .gallery-local-inner { max-width: var(--max-w); margin: 0 auto; }
+    .gallery-local h2 { font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
+    .gallery-local p { font-size: 0.92rem; color: #555; line-height: 1.75; margin-bottom: 1rem; max-width: 720px; }
+    .gallery-local a { color: var(--gold); }
+    .area-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
+    .area-tag { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark); background: var(--white); border: 1px solid rgba(0,0,0,0.08); padding: 0.4rem 0.9rem; }
 
     /* ── CTA Banner ── */
-    .cta-banner {
-      background: var(--gold);
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .cta-banner h2 {
-      font-size: clamp(1.3rem, 2.5vw, 1.9rem);
-      font-weight: 400;
-      color: var(--black);
-      margin-bottom: 0.75rem;
-    }
-
-    .cta-banner p {
-      font-size: 0.92rem;
-      color: rgba(10,10,10,0.75);
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      font-family: 'Georgia', serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      padding: 0.8rem 1.8rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .btn-dark {
-      background: var(--black);
-      color: var(--white);
-      border: 1px solid var(--black);
-    }
-
+    .cta-banner { background: var(--gold); padding: 4rem 2rem; text-align: center; }
+    .cta-banner h2 { font-size: clamp(1.3rem, 2.5vw, 1.9rem); font-weight: 400; color: var(--black); margin-bottom: 0.75rem; }
+    .cta-banner p { font-size: 0.92rem; color: rgba(10,10,10,0.75); margin-bottom: 2rem; }
+    .btn { display: inline-block; font-family: 'Georgia', serif; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.8rem 1.8rem; cursor: pointer; transition: all 0.2s ease; }
+    .btn-dark { background: var(--black); color: var(--white); border: 1px solid var(--black); }
     .btn-dark:hover { background: var(--dark); }
 
     /* ── Footer ── */
-    .site-footer {
-      background: var(--black);
-      color: rgba(245,242,238,0.5);
-      padding: 3rem 2rem;
-    }
-
-    .footer-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .footer-brand p {
-      font-size: 0.8rem;
-      line-height: 1.7;
-      margin-top: 0.75rem;
-    }
-
-    .footer-nav-title,
-    .footer-contact-title {
-      font-size: 0.68rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-    }
-
-    .footer-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .footer-links a {
-      font-size: 0.82rem;
-      color: rgba(245,242,238,0.5);
-      transition: color 0.2s;
-    }
-
+    .site-footer { background: var(--black); color: rgba(245,242,238,0.5); padding: 3rem 2rem; }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
+    .footer-brand p { font-size: 0.8rem; line-height: 1.7; margin-top: 0.75rem; }
+    .footer-nav-title, .footer-contact-title { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-links a { font-size: 0.82rem; color: rgba(245,242,238,0.5); transition: color 0.2s; }
     .footer-links a:hover { color: var(--gold); }
-
     .footer-contact p { font-size: 0.82rem; line-height: 1.8; }
-
-    .footer-bottom {
-      max-width: var(--max-w);
-      margin: 2.5rem auto 0;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.75rem;
-    }
-
-    .footer-bottom a {
-      color: rgba(245,242,238,0.4);
-      transition: color 0.2s;
-    }
-
+    .footer-bottom { max-width: var(--max-w); margin: 2.5rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.07); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; }
+    .footer-bottom a { color: rgba(245,242,238,0.4); transition: color 0.2s; }
     .footer-bottom a:hover { color: var(--gold); }
 
     /* ── Responsive ── */
@@ -527,21 +196,16 @@
       .nav-toggle { display: flex; }
       .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.98); justify-content: center; align-items: center; gap: 2.5rem; z-index: 150; }
       .nav-links.open a { font-size: 1rem; letter-spacing: 0.2em; }
-
-      .page-hero-content {
-        right: 5%;
-        left: 5%;
-        bottom: 10%;
-        text-align: left;
-        max-width: 100%;
-      }
-
+      .page-hero-content { right: 5%; left: 5%; bottom: 10%; text-align: left; max-width: 100%; }
       .mySlides img { max-height: 480px; object-fit: contain; background: var(--black); }
       .session-types { grid-template-columns: 1fr; }
+      .approach-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .footer-inner { grid-template-columns: 1fr; }
       .section { padding: 3.5rem 1.25rem; }
       .gallery-below { padding: 3.5rem 1.25rem; }
       .slideshow-section { padding: 3rem 1.25rem; }
+      .approach-section { padding: 3.5rem 1.25rem; }
+      .gallery-local { padding: 3rem 1.25rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -580,14 +244,14 @@
       <img
         class="page-hero-img"
         src="/images/hero.jpg"
-        alt="Dramatic black and white portrait by Peter Farrar Portraits"
+        alt="Dramatic black and white portrait by Peter Farrar Portraits Basingstoke Hampshire"
         width="1400"
         height="933"
         fetchpriority="high"
       />
       <div class="page-hero-overlay" aria-hidden="true"></div>
       <div class="page-hero-content">
-        <span class="page-eyebrow">Basingstoke & Hampshire Area</span>
+        <span class="page-eyebrow">Basingstoke &amp; Hampshire</span>
         <h1>Portrait Photography Gallery</h1>
       </div>
     </div>
@@ -597,8 +261,9 @@
       <div class="section-inner">
         <span class="section-label">Portfolio</span>
         <h2 id="gallery-intro-heading">Portrait Photography Portfolio</h2>
-        <p>The portraits in this gallery represent a wide range of clients, sessions, and stories, from intimate studio portraits to relaxed location shoots across Hampshire. Each image is the result of a genuine conversation, a moment of trust, and a shared commitment to creating something lasting.</p>
-        <p>No two sessions are alike. Whether capturing the quiet confidence of a professional headshot, the warmth of a family group, or the personality of an individual portrait, the goal is always the same: an honest image that the subject will be proud to display for years to come.</p>
+        <p>The portraits in this gallery represent a wide range of clients, sessions, and stories — from intimate studio portraits to relaxed location shoots across Hampshire. Each image is the result of a genuine conversation, a moment of trust, and a shared commitment to creating something lasting.</p>
+        <p>No two sessions are alike. Whether capturing the quiet confidence of a professional headshot in Basingstoke, the warmth of a family group, or the personality of an individual portrait, the goal is always the same: an honest image that the subject will be proud to display for years to come.</p>
+        <p>The work shown here spans individual portraits, couples, family sessions, and professional headshots — shot in the studio and on location across Hampshire. Every portrait in this gallery began with a conversation and ended with an image that meant something to the person in it.</p>
       </div>
     </section>
 
@@ -610,92 +275,92 @@
         <div class="slideshow-wrapper" role="region" aria-label="Portrait photography slideshow">
 
           <div class="mySlides active">
-            <img src="/images/sydney.png" alt="Studio portrait of Sydney by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/sydney.png" alt="Studio portrait of Sydney — Peter Farrar Portraits Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">Sydney</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/larry.png" alt="Portrait of Larry by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/larry.png" alt="Portrait of Larry — Peter Farrar Portraits Hampshire" width="780" height="560" loading="lazy" />
             <div class="caption-text">Larry</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/kls1234.jpg" alt="Portrait of Katie Carpenter by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/kls1234.jpg" alt="Portrait of Katie — studio session Peter Farrar Portraits" width="780" height="560" loading="lazy" />
             <div class="caption-text">Katie</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/tina.png" alt="Studio portrait of Tina by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/tina.png" alt="Studio portrait of Tina — Peter Farrar Portraits Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">Tina</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/lacey.png" alt="Portrait of Lacy by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/lacey.png" alt="Portrait of Lacy — Peter Farrar Portraits Hampshire" width="780" height="560" loading="lazy" />
             <div class="caption-text">Lacy</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/dsc5737.jpg" alt="Portrait of Callie Spainhour by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/dsc5737.jpg" alt="Portrait of Callie — individual portrait session Peter Farrar Portraits" width="780" height="560" loading="lazy" />
             <div class="caption-text">Callie</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/david.png" alt="Portrait of David by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/david.png" alt="Portrait of David — professional portrait Peter Farrar Portraits Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">David</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/2withbaby.png" alt="Portrait of a previous wedding couple and their new baby by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/2withbaby.png" alt="Family portrait — couple with new baby, Peter Farrar Portraits" width="780" height="560" loading="lazy" />
             <div class="caption-text">Couple with new baby</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/clemene.png" alt="Portrait of Clemene by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/clemene.png" alt="Portrait of Clemene — studio portrait Peter Farrar Portraits" width="780" height="560" loading="lazy" />
             <div class="caption-text">Clemene</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/couple-shot.png" alt="Romantic couple portrait session by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/couple-shot.png" alt="Romantic couple portrait session — Peter Farrar Portraits Hampshire" width="780" height="560" loading="lazy" />
             <div class="caption-text">Couple Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/family-portraits1.jpg" alt="Natural family portrait session by Peter Farrar Portraits, Basingstoke" width="780" height="560" loading="lazy" />
+            <img src="/images/family-portraits1.jpg" alt="Natural family portrait session — Peter Farrar Portraits Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">Family Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/family-portraits2.jpg" alt="Relaxed outdoor family portrait by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/family-portraits2.jpg" alt="Relaxed outdoor family portrait — Peter Farrar Portraits Hampshire" width="780" height="560" loading="lazy" />
             <div class="caption-text">Family Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/hood-portrait.png" alt="Creative hooded portrait with dramatic lighting by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/hood-portrait.png" alt="Creative portrait with dramatic lighting — Peter Farrar Portraits studio Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">Creative Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/jamie.png" alt="Individual portrait of Jamie by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/jamie.png" alt="Individual portrait of Jamie — Peter Farrar Portraits" width="780" height="560" loading="lazy" />
             <div class="caption-text">Jamie</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/mature-portrait.jpg" alt="Classic mature portrait session by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/mature-portrait.jpg" alt="Classic mature portrait session — Peter Farrar Portraits Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">Classic Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/sharp-man.png" alt="Sharp professional male portrait by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/sharp-man.png" alt="Professional male portrait — headshot session Peter Farrar Portraits Hampshire" width="780" height="560" loading="lazy" />
             <div class="caption-text">Professional Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/mom-dad.jpg" alt="Warm portrait of a couple by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/mom-dad.jpg" alt="Warm couple portrait — Peter Farrar Portraits Basingstoke" width="780" height="560" loading="lazy" />
             <div class="caption-text">Couple Portrait</div>
           </div>
 
           <div class="mySlides">
-            <img src="/images/still-love.png" alt="Tender couple portrait capturing enduring love by Peter Farrar Portraits" width="780" height="560" loading="lazy" />
+            <img src="/images/still-love.png" alt="Tender couple portrait capturing enduring love — Peter Farrar Portraits" width="780" height="560" loading="lazy" />
             <div class="caption-text">Still in Love</div>
           </div>
 
@@ -732,7 +397,7 @@
         <span class="section-label">Book Your Session</span>
         <h2 id="sessions-heading">Studio and Location Portraits Across Hampshire</h2>
         <p>Whether you have a clear vision or simply know you want something special, every session begins with a conversation. There is no rush, no rigid format, and no one-size-fits-all approach — just thoughtful, unhurried portrait photography tailored entirely to you.</p>
-        <p>Studio sessions are available at my Basingstoke base, and location sessions can be arranged throughout Hampshire and the surrounding counties.</p>
+        <p>Studio sessions are available at my Basingstoke base, and location sessions can be arranged throughout Hampshire and the surrounding counties. The studio provides full control of light and environment, ideal for professional headshots, individual portraits and family sessions where consistency matters. Location sessions bring a natural quality that suits couples, families, and personal branding work especially well.</p>
 
         <h2>Types of Portrait Sessions</h2>
         <div class="session-types">
@@ -752,6 +417,59 @@
             <h3>Personal Branding</h3>
             <p>A curated set of images that tell the story of you and your work.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Approach section ── -->
+    <section class="approach-section" aria-labelledby="approach-heading">
+      <div class="approach-inner">
+        <div>
+          <span class="section-label" style="color:var(--gold);">The Approach</span>
+          <h2 id="approach-heading">Portrait Photography Rooted in People, Not Technique</h2>
+          <p>The portraits in this gallery were not made by technique alone. They were made by creating the right conditions — a calm atmosphere, a genuine conversation, enough time to let the subject settle, and the patience to wait for something real.</p>
+          <p>Technical skill matters. Lighting, composition, and timing all contribute to a strong portrait. But they are tools, not the point. The point is the person. A technically perfect image of someone who looks uncomfortable is not a good portrait. A technically simple image of someone who is completely themselves can be extraordinary.</p>
+          <p>This is the standard every session at Peter Farrar Portraits is held to. Visit the <a href="/about-peter-farrar">about page</a> to learn more about the experience and approach behind the work, or <a href="/investment">explore the investment page</a> to discuss your own session.</p>
+        </div>
+        <div class="approach-principles">
+          <div class="principle">
+            <strong>Patience</strong>
+            <span>Sessions are never rushed. Time is taken to make sure every subject feels genuinely comfortable before the camera becomes part of the conversation.</span>
+          </div>
+          <div class="principle">
+            <strong>Honesty</strong>
+            <span>The goal is always an image that reflects who the subject actually is, not a performance of who they think they should be.</span>
+          </div>
+          <div class="principle">
+            <strong>Craft</strong>
+            <span>Lighting, composition, and post-production are applied with care and intention. Every image delivered is professionally finished to a consistent, high standard.</span>
+          </div>
+          <div class="principle">
+            <strong>Longevity</strong>
+            <span>Portraits are created to be displayed and treasured for years, not to date quickly. The style is timeless rather than trend-led.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Local section ── -->
+    <section class="gallery-local" aria-labelledby="local-heading">
+      <div class="gallery-local-inner">
+        <span class="section-label">Where I Work</span>
+        <h2 id="local-heading">Portrait Photography in Basingstoke and Across Hampshire</h2>
+        <p>The portraits shown here were created across a range of locations — studios and homes, countryside and urban settings, in North Carolina and Hampshire. Today, all new sessions take place from my base in Basingstoke, covering Hampshire and the surrounding counties.</p>
+        <p>If you are looking for a portrait photographer in Basingstoke, Winchester, Andover, Newbury, Farnborough, Reading or anywhere across Hampshire, <a href="/contact">get in touch</a> to discuss availability and what is right for your session.</p>
+        <div class="area-list" aria-label="Areas served">
+          <span class="area-tag">Basingstoke</span>
+          <span class="area-tag">Winchester</span>
+          <span class="area-tag">Andover</span>
+          <span class="area-tag">Newbury</span>
+          <span class="area-tag">Reading</span>
+          <span class="area-tag">Farnborough</span>
+          <span class="area-tag">Fleet</span>
+          <span class="area-tag">Hook</span>
+          <span class="area-tag">Tadley</span>
+          <span class="area-tag">Hampshire</span>
         </div>
       </div>
     </section>
@@ -785,10 +503,9 @@
           <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
       </nav>
-<div class="footer-contact">
+      <div class="footer-contact">
         <p class="footer-contact-title">Get in Touch</p>
         <p>Based in Basingstoke, Hampshire<br>Serving Hampshire &amp; surrounding counties</p>
-        <!-- ADD HERE -->
         <p class="footer-nav-title" style="margin-top:1.5rem;">Follow</p>
         <ul class="footer-links" role="list">
           <li><a href="https://www.facebook.com/peterfarrarportraits" target="_blank" rel="noopener">Facebook</a></li>
@@ -798,20 +515,18 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">    
-    <span>© 2026 Peter Farrar Portraits. All rights reserved.</span>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Peter Farrar Portraits. All rights reserved.</span>
       <a href="/privacy-policy">Privacy Policy</a>
     </div>
   </footer>
 
   <script>
-    // Scroll-aware nav background
     const nav = document.getElementById('site-nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
 
-    // Mobile hamburger
     const toggle = document.getElementById('nav-toggle');
     const links  = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
