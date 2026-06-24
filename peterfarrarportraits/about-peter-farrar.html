@@ -39,32 +39,64 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
 
   <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Peter Farrar",
-      "jobTitle": "Portrait Photographer",
-      "description": "Meet Peter Farrar — portrait photographer, author and mentor based in Basingstoke, Hampshire. Decades of experience capturing people across the UK and USA.",
-      "url": "https://www.peterfarrarportraits.com/about-peter-farrar",
-      "image": "https://www.peterfarrarportraits.com/images/og-about.jpg",
-      "worksFor": {
-        "@type": "LocalBusiness",
-        "name": "Peter Farrar Portraits",
-        "url": "https://www.peterfarrarportraits.com/"
-      },
-      "knowsAbout": ["Portrait Photography", "Wedding Photography", "Commercial Photography", "Visual Storytelling", "Photography Education"],
-      "sameAs": [
-        "https://www.facebook.com/peterfarrarportraits",
-        "https://www.instagram.com/peterfarrarportraits",
-        "https://x.com/peterfportraits",
-        "https://www.threads.com/@peterfarrarportraits"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Peter Farrar",
+        "jobTitle": "Portrait Photographer",
+        "description": "Meet Peter Farrar — portrait photographer, author and mentor based in Basingstoke, Hampshire. Decades of experience capturing people across the UK and USA.",
+        "url": "https://www.peterfarrarportraits.com/about-peter-farrar",
+        "image": "https://www.peterfarrarportraits.com/images/og-about.jpg",
+        "worksFor": {
+          "@type": "LocalBusiness",
+          "name": "Peter Farrar Portraits",
+          "url": "https://www.peterfarrarportraits.com/"
+        },
+        "knowsAbout": ["Portrait Photography", "Wedding Photography", "Commercial Photography", "Visual Storytelling", "Photography Education"],
+        "sameAs": [
+          "https://www.facebook.com/peterfarrarportraits",
+          "https://www.instagram.com/peterfarrarportraits",
+          "https://x.com/peterfportraits",
+          "https://www.threads.com/@peterfarrarportraits"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.peterfarrarportraits.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://www.peterfarrarportraits.com/about-peter-farrar"
+        }
       ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.peterfarrarportraits.com/#business",
+      "name": "Peter Farrar Portraits",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "8",
+        "bestRating": "5"
+      }
     }
-  }
-  </script>
+  ]
+}
+</script>
 
   <style>
     /* ── Reset & Base ── */
