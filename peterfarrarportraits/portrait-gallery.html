@@ -181,7 +181,7 @@
     .gallery-local h2 { font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 400; color: var(--dark); margin-bottom: 1rem; }
     .gallery-local p { font-size: 0.92rem; color: #555; line-height: 1.75; margin-bottom: 1rem; max-width: 720px; }
     .gallery-local a { color: var(--gold); }
-    .area-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
+    .area-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; list-style: none; padding: 0; }
     .area-tag { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark); background: var(--white); border: 1px solid rgba(0,0,0,0.08); padding: 0.4rem 0.9rem; }
 
     /* ── CTA Banner ── */
@@ -242,7 +242,7 @@
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="nav-links" role="list">
+    <ul class="nav-links" id="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/about-peter-farrar">About</a></li>
       <li><a href="/portrait-gallery" aria-current="page">Gallery</a></li>
@@ -268,7 +268,7 @@
       <div class="page-hero-overlay" aria-hidden="true"></div>
       <div class="page-hero-content">
         <span class="page-eyebrow">Basingstoke &amp; Hampshire</span>
-        <h1><h1>Portrait Photography Gallery, Basingstoke and Hampshire</h1></h1>
+        <h1>Portrait Photography Gallery, Basingstoke and Hampshire</h1>
       </div>
     </div>
 
@@ -475,18 +475,18 @@
         <h2 id="local-heading">Portrait Photography in Basingstoke and Across Hampshire</h2>
         <p>The portraits shown here were created across a range of locations, studios and homes, countryside and urban settings, in North Carolina and Hampshire. Today, all new sessions take place from my base in Basingstoke, covering Hampshire and the surrounding counties.</p>
         <p>If you are looking for a portrait photographer in Basingstoke, Winchester, Andover, Newbury, Farnborough, Reading or anywhere across Hampshire, <a href="/contact">get in touch</a> to discuss availability and what is right for your session.</p>
-        <div class="area-list" aria-label="Areas served">
-          <span class="area-tag">Basingstoke</span>
-          <span class="area-tag">Winchester</span>
-          <span class="area-tag">Andover</span>
-          <span class="area-tag">Newbury</span>
-          <span class="area-tag">Reading</span>
-          <span class="area-tag">Farnborough</span>
-          <span class="area-tag">Fleet</span>
-          <span class="area-tag">Hook</span>
-          <span class="area-tag">Tadley</span>
-          <span class="area-tag">Hampshire</span>
-        </div>
+        <ul class="area-list" aria-label="Areas served">
+          <li class="area-tag">Basingstoke</li>
+          <li class="area-tag">Winchester</li>
+          <li class="area-tag">Andover</li>
+          <li class="area-tag">Newbury</li>
+          <li class="area-tag">Reading</li>
+          <li class="area-tag">Farnborough</li>
+          <li class="area-tag">Fleet</li>
+          <li class="area-tag">Hook</li>
+          <li class="area-tag">Tadley</li>
+          <li class="area-tag">Hampshire</li>
+        </ul>
       </div>
     </section>
 
@@ -508,7 +508,7 @@
       </div>
       <nav aria-label="Footer navigation">
         <p class="footer-nav-title">Navigation</p>
-        <ul class="footer-links" role="list">
+        <ul class="footer-links">
           <li><a href="/">Home</a></li>
           <li><a href="/about-peter-farrar">About</a></li>
           <li><a href="/portrait-gallery">Gallery</a></li>
@@ -524,7 +524,7 @@
         <p>Based in Basingstoke, Hampshire<br>Serving Hampshire &amp; surrounding counties</p>
         <p><a href="tel:07508587142" style="color:rgba(245,242,238,0.5);">07508 587142</a></p>
         <p class="footer-nav-title" style="margin-top:1.5rem;">Follow</p>
-        <ul class="footer-links" role="list">
+        <ul class="footer-links">
           <li><a href="https://www.facebook.com/peterfarrarportraits" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="https://www.linkedin.com/company/peter-farrar-portraits-and-books" target="_blank" rel="noopener">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/peterfarrarportraits" target="_blank" rel="noopener">Instagram</a></li>
@@ -532,7 +532,6 @@
           <li><a href="https://www.threads.com/@peterfarrarportraits" target="_blank" rel="noopener">Threads</a></li>
         </ul>
       </div>
-    </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Peter Farrar Portraits. All rights reserved.</span>
